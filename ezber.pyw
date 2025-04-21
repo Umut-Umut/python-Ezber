@@ -6,7 +6,7 @@ fontVariable = "URW 11"
 buttonBg = "#5B443E"
 buttonBd = 0
 backGroundColor =   "#CFA987"#CFA987
-hgVariable =        "#375C32"#375C32
+# hgVariable =        "#375C32"#375C32
 activeBgValue =     "#375C32"#375C32
 ListBbackGround =   "#e7bd98"#e7bd98
 
@@ -29,14 +29,18 @@ mainWin.iconphoto(False, icon)
 fr1 = Frame(mainWin)
 
 # LABELS
-lb1 = Label(mainWin, text="---", font=fontVariable, bg=backGroundColor, highlightcolor=hgVariable)
-lb2 = Label(mainWin, text="---", font=fontVariable, bg=backGroundColor, highlightcolor=hgVariable)
+lb1 = Label(mainWin, text="---", font=fontVariable, bg=backGroundColor)
+# lb1 = Label(mainWin, text="---", font=fontVariable, bg=backGroundColor, highlightcolor=hgVariable)
+lb2 = Label(mainWin, text="---", font=fontVariable, bg=backGroundColor)
+# lb2 = Label(mainWin, text="---", font=fontVariable, bg=backGroundColor, highlightcolor=hgVariable)
 
 # ENTRYS
-ent1 = Entry(mainWin, width=35, justify="center", font=fontVariable, bg=backGroundColor, highlightcolor=backGroundColor, selectbackground="#FAEDCA")
+ent1 = Entry(mainWin, width=35, justify="center", font=fontVariable, bg=backGroundColor, selectbackground="#FAEDCA")
+# ent1 = Entry(mainWin, width=35, justify="center", font=fontVariable, bg=backGroundColor, highlightcolor=backGroundColor, selectbackground="#FAEDCA")
 
 # LISTBOX
-listbox = Listbox(mainWin, width=35, height=12, font="URW 11", bg=ListBbackGround, highlightcolor=hgVariable, justify="center", activestyle="none")
+listbox = Listbox(mainWin, width=35, height=12, font="URW 11", bg=ListBbackGround, justify="center", activestyle="none")
+# listbox = Listbox(mainWin, width=35, height=12, font="URW 11", bg=ListBbackGround, highlightcolor=hgVariable, justify="center", activestyle="none")
 
 # FUNCTIONS
 def info():
@@ -60,14 +64,16 @@ def wordOp():
     secondFrame = Frame(secondWin, bg=backGroundColor)
 
     # SECOND LABELS
-    secondLabel1 = Label(secondWin, text="---", bg=backGroundColor, highlightcolor=hgVariable, font=fontVariable)
+    # secondLabel1 = Label(secondWin, text="---", bg=backGroundColor, highlightcolor=hgVariable, font=fontVariable)
+    secondLabel1 = Label(secondWin, text="---", bg=backGroundColor, font=fontVariable)
 
     # SECOND ENTRYS
     secondEnt1 = Entry(secondWin, width=35, justify="center", font=fontVariable, bg=backGroundColor, highlightcolor=backGroundColor, selectbackground="#FAEDCA")
     secondEnt2 = Entry(secondWin, width=35, justify="center", font=fontVariable, bg=backGroundColor, highlightcolor=backGroundColor, selectbackground="#FAEDCA")
 
     # SECOND LISTBOX
-    secondListbox = Listbox(secondWin, width=35, height=12, font="URW 11", bg=ListBbackGround, highlightcolor=hgVariable, justify="center", activestyle="none")
+    # secondListbox = Listbox(secondWin, width=35, height=12, font="URW 11", bg=ListBbackGround, highlightcolor=hgVariable, justify="center", activestyle="none")
+    secondListbox = Listbox(secondWin, width=35, height=12, font="URW 11", bg=ListBbackGround, justify="center", activestyle="none")
     
     # SECOND LOSTBOX
     secondWin.bind("<Escape>", lambda e: secondWin.destroy())
